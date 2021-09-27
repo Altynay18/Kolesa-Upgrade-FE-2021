@@ -4,68 +4,63 @@
 }
 
 body {
-    background-image: url(src/assets/body_background.png); /* revisit this part, why background_image is not working" */
     background-color: cornflowerblue;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-h5 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    align-items: center;
     font-family: 'Open Sans', sans-serif;                     /* separate text and button styles */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
 }
 
-.item_container {
-    margin: 50px;
+.modal-item {
     background-color: #fff;
-    width: 1039px;
-    height: 588px;
+    min-width: 653px;
+    height: min-content;
     border-radius: 16px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-top: 56px;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-bottom: 64px;
 }
 
 .item_photo {
-    position: static;
-    display: block;
-    height: 330px;
+    min-width: 330px;
+    height: auto;
+    margin-right: 24px;
 }
 
 .item_photo_img {
-    margin-top: 56px;
-    margin-left: 56px;
     display: block;
 }
 
 .models {
+    margin-top: 16px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.model:hover,
+.active {
+    border: 1px solid #2a81dd;
 }
 
 .item_info {
-    width: 653px;
-    margin-top: 32px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
+    min-width: 653px;
 }
 
 .item_name {
     margin-bottom: 8px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
     font-size: 20px;
-    line-height: 32px;
 }
 
 .price {
@@ -73,16 +68,14 @@ h5 {
     left: 0;
     top: 40px;
     margin-bottom: 8px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
 }
 
 .balance {
     position: absolute;
-    top: 162px;
-    right: 162px;
+    right: 787px;
+    top: 112px;
     width: 196px;
     height: 68px;
     background-color: #f0fafd;
@@ -95,12 +88,14 @@ h5 {
 .your_balance {
     margin-top: 8px;
     margin-left: 16px;
+    font-size: 14px;
+    color: #888b94;
 }
 
 .score {
     margin-left: 16px;
     font-size: 16px;
-    font-weight: 600px;
+    font-weight: normal;
 }
 
 .balance_more {
@@ -114,7 +109,7 @@ h5 {
 }
 
 .button {
-    width: 134px;
+    min-width: 134px;
     height: 36px;
     background: #2a81dd;
     border-radius: 8px;
@@ -122,10 +117,12 @@ h5 {
     justify-content: center;
     align-items: center;
     color: #fff;
+    cursor: pointer;
 }
 
 .item_details_color {
     margin-top: 24px;
+    font-size: 14px;
 }
 
 .colors {
@@ -134,12 +131,13 @@ h5 {
     top: 0%;
     bottom: 0%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 8px;
 }
 
 .color_option {
-    width: 96px;
+    min-width: 96px;
     height: 40px;
     display: flex;
     flex-direction: row;
@@ -149,6 +147,11 @@ h5 {
     box-sizing: border-box;
     border-radius: 8px;
     margin-right: 4px;
+    cursor: pointer;
+}
+
+.color_option:hover {
+    background-color: #d6ecfb;
 }
 
 .the_color {
@@ -160,11 +163,13 @@ h5 {
 
 .size_title {
     margin-top: 24px;
+    font-size: 14px;
 }
 
 .item_sizes {
     margin-top: 8px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .size {
@@ -176,11 +181,12 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
     color: #2a81dd;
+    cursor: pointer;
+}
+
+.size:hover {
+    background-color: #d6ecfb;
 }
 
 .details {
