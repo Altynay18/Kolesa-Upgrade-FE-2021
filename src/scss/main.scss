@@ -1,0 +1,28 @@
+@import './feedback.scss';
+@import './footer.scss';
+@import './header.scss';
+@import './hot_buttons.scss';
+@import './item_menu.scss';
+@import './item.scss';
+@import './main_body.scss';
+@import './main_page.scss';
+@import './menu_options.scss';
+@import './poster.scss';
+@import './search.scss';
+@import './side_menu.scss';
+@import './social_media.scss';
+@import './user_info.scss';
+@import './hot_button.scss';
+@import './sm_options.scss';
+@import './variables.scss';
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+}
+
+.body {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr auto;
+}

@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+.footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $black;
+    color: $white;
+}

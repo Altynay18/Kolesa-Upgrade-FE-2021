@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+.item {
+    width: 33%;
+    margin-bottom: $medium;
+
+    &__button {
+        background-color: $blue;
+        color: $white;
+        border-radius: $s-small;
+        border: none;
+        height: 44px;
+        width: 296px;
+        margin: 0 auto;
+        display: none;
+    }
+
+    &:hover {
+        display: block;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__score {
+        margin-top: $small;
+        margin-bottom: $s-small;
+        font-size: $medium;
+        line-height: $large;
+        color: $blue;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &__description {
+        margin: 0;
+    }
+
+    &__sizes {
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: $medium;
+        color: #888b94;
+        font-weight: normal;
+    }
+
+    &__:hover {
+        box-shadow: $grey-dark;
+        border-radius: $s-small;
+    }
+}
