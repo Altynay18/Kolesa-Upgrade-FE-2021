@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+.item_menu {
+    margin-top: $s-small;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

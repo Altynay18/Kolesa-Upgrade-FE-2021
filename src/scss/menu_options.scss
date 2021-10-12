@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+.menu_options {
+    display: flex;
+    margin-top: 46px;
+
+    &__tab {
+        width: 100px;
+        height: $large;
+        background-color: $white;
+        border-radius: $s-small;
+        color: $blue;
+        border-color: $blue;
+        margin-right: 9px;
+
+        &:hover {
+            background-color: $blue-light-2;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+.search {
+    min-width: 308px;
+    min-height: 44px;
+    border-radius: $s-small;
+    border: none;
+    background: $grey;
+
+    &:focus {
+        border: 0.5px;
+    }
+
+    &:active {
+        background-color: $grey-shade;
+    }
+}

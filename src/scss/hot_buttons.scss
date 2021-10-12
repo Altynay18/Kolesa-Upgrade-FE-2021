@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+.hot_buttons {
+    margin-top: $medium;
+    display: flex;
+    justify-content: space-between;
+}

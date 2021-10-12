@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+.social_media {
+    padding-left: $l-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logos.img {
+        margin-top: $s-small;
+        margin-right: 14px;
+    }
+}

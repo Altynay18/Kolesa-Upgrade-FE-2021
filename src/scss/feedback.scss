@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+.feedback {
+    display: flex;
+    padding-right: 40px;
+    align-items: center;
+    font-size: 14px;
+
+    &__btn {
+        width: 150px;
+        height: $large;
+        color: $blue;
+        border-radius: $s-small;
+        border: none;
+        margin-left: 40px;
+    }
+
+    &:hover {
+        background-color: $blue-light-2;
+    }
+}
